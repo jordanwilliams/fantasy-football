@@ -1,3 +1,4 @@
+// @todo add teamName
 export const members = [
 	{
 		firstName: 'Aaron',
