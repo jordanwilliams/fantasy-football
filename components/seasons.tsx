@@ -6,6 +6,7 @@ import type { Season } from '@/data/seasons';
 import { seasons, seasonsData } from '@/data/seasons';
 
 import {
+	TableContainer,
 	Table,
 	TableHead,
 	TableHeadCell,
@@ -20,15 +21,13 @@ export function Seasons() {
 	const seasonData = seasonsData[season];
 
 	return (
-		<div>
+		<TableContainer>
 			<Table>
 				<TableHead>
 					<TableRow>
 						<TableHeadCell>Name</TableHeadCell>
 						<TableHeadCell>Place</TableHeadCell>
-						<TableHeadCell>Wins</TableHeadCell>
-						<TableHeadCell>Losses</TableHeadCell>
-						<TableHeadCell>Ties</TableHeadCell>
+						<TableHeadCell>Record</TableHeadCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -37,18 +36,17 @@ export function Seasons() {
 							place,
 							record: { wins, losses, ties },
 						} = seasonData[id];
+
 						return (
 							<TableRow key={id}>
 								<TableCell>{firstName}</TableCell>
 								<TableCell>{place}</TableCell>
-								<TableCell>{wins}</TableCell>
-								<TableCell>{losses}</TableCell>
-								<TableCell>{ties}</TableCell>
+								<TableCell>{`${wins}-${losses}-${ties}`}</TableCell>
 							</TableRow>
 						);
 					})}
 				</TableBody>
 			</Table>
-		</div>
+		</TableContainer>
 	);
 }

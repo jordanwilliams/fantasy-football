@@ -1,6 +1,21 @@
 :root {
-	--color-bg: #fcfcfc;
+	/* --color-bg: #fcfcfc; */
 	--color-fg: #3a3a3a;
+	--color-gray-1: rgb(249, 249, 249);
+	--color-gray-2: rgb(224, 224, 224);
+	--color-gray-3: rgb(131, 131, 131);
+	--color-border: var(--color-gray-2);
+
+	--spacing-1: 4px;
+	--spacing-2: 8px;
+	--spacing-3: 12px;
+	--spacing-4: 16px;
+	--spacing-5: 20px;
+
+	--border: 1px solid var(--color-border);
+	--border-radius-table: 12px;
+
+	--font-size-small: 13px;
 }
 
 @media (prefers-color-scheme: dark) {

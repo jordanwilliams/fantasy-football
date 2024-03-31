@@ -1,0 +1,28 @@
+.tableContainer {
+	display: flex;
+	border: var(--border);
+	border-radius: var(--border-radius-table);
+	margin: var(--spacing-4);
+	overflow: hidden;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: var(--font-size-small);
+	text-align: left;
+}
+
+.tableHead {
+	background-color: var(--color-gray-1);
+}
+
+.tableRow:first-child,
+.tableRow:not(:last-child) {
+	border-bottom: var(--border);
+}
+
+.tableHeadCell,
+.tableCell {
+	padding: var(--spacing-3);
+}
