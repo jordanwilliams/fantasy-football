@@ -12,22 +12,35 @@ export function Seasons() {
 
 	return (
 		<div>
-			{members.map(({ firstName, id }) => {
-				const {
-					place,
-					record: { wins, losses, ties },
-				} = seasonData[id];
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Place</th>
+						<th>Wins</th>
+						<th>Losses</th>
+						<th>Ties</th>
+					</tr>
+				</thead>
+				<tbody>
+					{members.map(({ firstName, id }) => {
+						const {
+							place,
+							record: { wins, losses, ties },
+						} = seasonData[id];
 
-				return (
-					<div key={id}>
-						<span>{firstName}</span>
-						<span>{place}</span>
-						<span>{wins}</span>
-						<span>{losses}</span>
-						<span>{ties}</span>
-					</div>
-				);
-			})}
+						return (
+							<tr key={id}>
+								<td>{firstName}</td>
+								<td>{place}</td>
+								<td>{wins}</td>
+								<td>{losses}</td>
+								<td>{ties}</td>
+							</tr>
+						);
+					})}
+				</tbody>
+			</table>
 		</div>
 	);
 }
