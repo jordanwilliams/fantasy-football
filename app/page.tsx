@@ -1,10 +1,11 @@
-import Image from 'next/image';
+import { Seasons } from '@/components/seasons';
+
 import styles from './page.module.css';
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<div>This website is under construction</div>
+			<Seasons />
 		</main>
 	);
 }
