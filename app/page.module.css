@@ -7,6 +7,9 @@
 }
 
 .title {
+	background: linear-gradient(to right, #696eff, #f8acff);
+	background-clip: text;
+	color: transparent;
 	font-size: 96px;
 	font-stretch: 90%;
 	font-weight: 900;
