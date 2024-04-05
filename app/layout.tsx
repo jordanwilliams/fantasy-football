@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
+import LayoutHeader from '@/components/layout-header';
 import './globals.css';
+import styles from './layout.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
 const monaSans = localFont({
 	src: '../fonts/mona-sans.woff2',
 });
@@ -20,7 +20,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={monaSans.className}>{children}</body>
+			<body className={monaSans.className}>
+				<div className={styles.layout}>
+					<LayoutHeader />
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }

@@ -1,0 +1,9 @@
+.header {
+	padding: var(--spacing-5) var(--spacing-5) 0;
+}
+
+.title {
+	font-weight: 700;
+	font-stretch: 90%;
+	user-select: none;
+}
