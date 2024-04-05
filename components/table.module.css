@@ -1,7 +1,5 @@
 .tableContainer {
 	display: flex;
-	border-top: var(--border);
-	margin: var(--spacing-4);
 	overflow: hidden;
 }
 
@@ -19,5 +17,5 @@
 
 .tableHeadCell,
 .tableCell {
-	padding: var(--spacing-3);
+	padding: var(--spacing-3) 0;
 }

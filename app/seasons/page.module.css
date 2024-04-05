@@ -1,0 +1,19 @@
+.main {
+	padding: 0 var(--spacing-5) var(--spacing-5);
+}
+
+.seasonsList {
+	max-width: 80%;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.season {
+	margin-bottom: var(--spacing-5);
+}
+
+.seasonHeading {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: var(--spacing-2);
+}
