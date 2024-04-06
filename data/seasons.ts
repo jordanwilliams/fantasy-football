@@ -187,3 +187,67 @@ export const seasonsData: SeasonsData = {
 		},
 	},
 };
+
+type AggregateSeasonsData = {
+	record: WinLossTie;
+	championships: Season[];
+	toiletBowls: Season[];
+};
+
+const initialAggregateData: AggregateSeasonsData = {
+	record: {
+		wins: 0,
+		losses: 0,
+		ties: 0,
+	},
+	championships: [],
+	toiletBowls: [],
+};
+
+export const aggregateSeasonsData: Record<MemberID, AggregateSeasonsData> =
+	Object.entries(seasonsData).reduce(
+		(acc, value) => {
+			const next = {
+				...acc,
+			};
+
+			const [season, seasonData] = value as [Season, SeasonData];
+
+			Object.entries(seasonData).forEach((v) => {
+				const [memberId, memberSeasonData] = v as [
+					MemberID,
+					SeasonMemberData,
+				];
+				const { place, record: seasonRecord } = memberSeasonData;
+
+				const { record, championships, toiletBowls } = next[memberId];
+				next[memberId] = {
+					record: {
+						wins: record.wins + seasonRecord.wins,
+						losses: record.losses + seasonRecord.losses,
+						ties: record.ties + seasonRecord.ties,
+					},
+					championships:
+						place === 1
+							? [...championships, season]
+							: championships,
+					toiletBowls:
+						place === 10 ? [...toiletBowls, season] : toiletBowls,
+				};
+			});
+
+			return next;
+		},
+		{
+			'aaron-mack': { ...initialAggregateData },
+			'alex-piering': { ...initialAggregateData },
+			'ben-johnson': { ...initialAggregateData },
+			'chase-pritchett': { ...initialAggregateData },
+			'cody-fields': { ...initialAggregateData },
+			'collin-barrett': { ...initialAggregateData },
+			'dan-eckman': { ...initialAggregateData },
+			'jordan-williams': { ...initialAggregateData },
+			'kenny-copsey': { ...initialAggregateData },
+			'max-houston': { ...initialAggregateData },
+		}
+	);
