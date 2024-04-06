@@ -2,30 +2,37 @@
 	padding: 0 var(--spacing-5) var(--spacing-5);
 }
 
-.seasonsList {
+.list {
 	margin: 0 auto;
 	max-width: 800px;
 }
 
-.season {
+.card {
 	border-radius: var(--spacing-2);
 	box-shadow: var(--box-shadow);
 	padding: var(--spacing-4);
 	outline: var(--border);
 }
 
-.season:not(:last-child) {
+.card:not(:last-child) {
 	margin-bottom: var(--spacing-4);
 }
 
 @media (prefers-color-scheme: dark) {
-	.season {
+	.card {
 		box-shadow: none;
 	}
 }
 
-.seasonHeading {
+.heading {
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: var(--spacing-2);
+}
+
+.divider {
+	background: var(--gradient);
+	height: var(--spacing-2);
+	width: 100%;
+	margin: var(--spacing-5) 0;
 }
