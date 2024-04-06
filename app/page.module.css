@@ -13,15 +13,27 @@
 	font-size: 96px;
 	font-stretch: 90%;
 	font-weight: 900;
+	animation: magically-appear 2000ms both;
 }
 
 .description {
-	font-size: 24px;
-	font-stretch: 95%;
+	font-size: 20px;
+	font-stretch: 90%;
 	font-weight: 300;
+	animation: magically-appear 1000ms both;
+	animation-delay: 1500ms
 }
 
 .title,
 .description {
 	user-select: none;
+}
+
+@keyframes magically-appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
