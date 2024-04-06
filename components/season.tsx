@@ -37,7 +37,7 @@ export function Season({ season }: SeasonProps) {
 						} = seasonData[id];
 
 						return (
-							<TableRow key={id}>
+							<TableRow key={`${season}-${id}`}>
 								<TableCell>{teamName}</TableCell>
 								<TableCell>{place}</TableCell>
 								<TableCell>{`${wins}-${losses}-${ties}`}</TableCell>
