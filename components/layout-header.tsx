@@ -6,10 +6,6 @@ import localFont from 'next/font/local';
 
 import styles from './layout-header.module.css';
 
-const hubotSans = localFont({
-	src: '../fonts/hubot-sans.woff2',
-});
-
 enum Routes {
 	Home = '/',
 	Seasons = '/seasons',
