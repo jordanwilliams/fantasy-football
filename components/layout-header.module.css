@@ -14,6 +14,7 @@
 	border-radius: var(--spacing-1);
 	width: 32px;
 	height: 32px;
+	appearance: none;
 }
 
 .button svg {
