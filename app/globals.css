@@ -4,6 +4,7 @@
 	--color-border: #797c814d;
 	--color-twilight: #696eff;
 	--color-powerpuff: #f8acff;
+	--color-accent: var(--color-twilight);
 
 	--spacing-1: 4px;
 	--spacing-2: 8px;
@@ -25,6 +26,8 @@
 	:root {
 		--color-bg: #1c1c1c;
 		--color-fg: #e6e6e6;
+		--color-accent: var(--color-powerpuff);
+
 	}
 }
 
