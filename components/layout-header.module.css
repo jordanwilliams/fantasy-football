@@ -29,7 +29,7 @@
 	animation: magically-appear 1000ms both;
 }
 
-.linkActive::after {
+.link[data-active=true]::after {
 	content: '';
 	display: block;
 	height: 2px;

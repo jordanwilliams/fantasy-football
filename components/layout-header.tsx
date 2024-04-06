@@ -46,13 +46,15 @@ export default function LayoutHeader() {
 				<>
 					<Link
 						href={Routes.Home}
-						className={`${styles.link} ${pathname === Routes.Home ? styles.linkActive : ''}`}
+						data-active={pathname === Routes.Home}
+						className={styles.link}
 					>
 						Home
 					</Link>
 					<Link
 						href={Routes.Seasons}
-						className={`${styles.link} ${pathname === Routes.Seasons ? styles.linkActive : ''}`}
+						data-active={pathname === Routes.Seasons}
+						className={styles.link}
 					>
 						Seasons
 					</Link>
