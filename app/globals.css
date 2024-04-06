@@ -1,10 +1,9 @@
 :root {
 	--color-bg: #fcfcfc;
 	--color-fg: #3a3a3a;
-	--color-gray-1: rgb(249, 249, 249);
-	--color-gray-2: rgb(224, 224, 224);
-	--color-gray-3: rgb(131, 131, 131);
-	--color-border: var(--color-gray-2);
+	--color-border: #797c814d;
+	--color-twilight: #696eff;
+	--color-powerpuff: #f8acff;
 
 	--spacing-1: 4px;
 	--spacing-2: 8px;
@@ -15,7 +14,11 @@
 	--border: 1px solid var(--color-border);
 	--border-radius-table: 12px;
 
+	--box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+
 	--font-size-small: 13px;
+
+	--gradient: linear-gradient(to right, var(--color-twilight), var(--color-powerpuff));
 }
 
 @media (prefers-color-scheme: dark) {

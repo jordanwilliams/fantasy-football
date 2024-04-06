@@ -9,7 +9,20 @@
 }
 
 .season {
-	margin-bottom: var(--spacing-5);
+	border-radius: var(--spacing-2);
+	box-shadow: var(--box-shadow);
+	padding: var(--spacing-4);
+	outline: var(--border);
+}
+
+.season:not(:last-child) {
+	margin-bottom: var(--spacing-4);
+}
+
+@media (prefers-color-scheme: dark) {
+	.season {
+		box-shadow: none;
+	}
 }
 
 .seasonHeading {

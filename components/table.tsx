@@ -34,7 +34,7 @@ export function Table({ children }: TableProps) {
 }
 
 export function TableHead({ children }: TableHeadProps) {
-	return <thead>{children}</thead>;
+	return <thead className={styles.tableHead}>{children}</thead>;
 }
 
 export function TableHeadCell({ children }: TableHeadProps) {
