@@ -1,5 +1,5 @@
 .main {
-	padding: 0 var(--spacing-5) var(--spacing-5);
+	padding: var(--spacing-5);
 }
 
 .list {
