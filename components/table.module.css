@@ -15,16 +15,6 @@
 	border-bottom: var(--border);
 }
 
-.tableHead {
-	color: var(--color-twilight);
-}
-
-@media (prefers-color-scheme: dark) {
-	.tableHead {
-		color: var(--color-powerpuff);
-	}
-}
-
 .tableHeadCell,
 .tableCell {
 	padding: var(--spacing-3) 0;
