@@ -106,82 +106,82 @@ export const seasonsData: SeasonsData = {
 	},
 	'2022': {
 		'aaron-mack': {
-			place: 3,
+			place: 2,
 			record: {
-				wins: 7,
-				losses: 5,
+				wins: 11,
+				losses: 3,
 				ties: 0,
 			},
 		},
 		'alex-piering': {
-			place: 1,
+			place: 4,
 			record: {
-				wins: 11,
-				losses: 1,
+				wins: 6,
+				losses: 8,
 				ties: 0,
 			},
 		},
 		'ben-johnson': {
-			place: 2,
+			place: 6,
 			record: {
-				wins: 10,
-				losses: 2,
+				wins: 8,
+				losses: 6,
 				ties: 0,
 			},
 		},
 		'chase-pritchett': {
-			place: 4,
+			place: 10,
 			record: {
-				wins: 6,
-				losses: 6,
+				wins: 3,
+				losses: 11,
 				ties: 0,
 			},
 		},
 		'cody-fields': {
 			place: 5,
 			record: {
-				wins: 5,
+				wins: 7,
 				losses: 7,
 				ties: 0,
 			},
 		},
 		'collin-barrett': {
-			place: 6,
+			place: 8,
 			record: {
-				wins: 4,
+				wins: 6,
 				losses: 8,
 				ties: 0,
 			},
 		},
 		'dan-eckman': {
-			place: 7,
+			place: 9,
 			record: {
-				wins: 3,
-				losses: 9,
+				wins: 6,
+				losses: 8,
 				ties: 0,
 			},
 		},
 		'jordan-williams': {
-			place: 8,
+			place: 3,
 			record: {
-				wins: 2,
-				losses: 10,
+				wins: 11,
+				losses: 3,
 				ties: 0,
 			},
 		},
 		'kenny-copsey': {
-			place: 9,
+			place: 7,
 			record: {
-				wins: 1,
-				losses: 11,
+				wins: 5,
+				losses: 9,
 				ties: 0,
 			},
 		},
 		'max-houston': {
-			place: 10,
+			place: 1,
 			record: {
-				wins: 0,
-				losses: 12,
+				wins: 7,
+				losses: 7,
 				ties: 0,
 			},
 		},
