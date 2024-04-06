@@ -1,9 +1,6 @@
-'use client';
-import { useState } from 'react';
-
 import { members } from '@/data/members';
 import type { Season } from '@/data/seasons';
-import { seasons, seasonsData } from '@/data/seasons';
+import { seasonsData } from '@/data/seasons';
 
 import {
 	TableContainer,
