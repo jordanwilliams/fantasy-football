@@ -6,7 +6,13 @@ export type WinLossTie = {
 	ties: number;
 };
 
-export type SeasonPlace = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+/**
+ * Generally there are 10 places per seasons
+ * - 1 is the champion
+ * - 10 is the toilet bowl loser
+ * - 0 means a person didn't participate in that season
+ */
+export type SeasonPlace = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 export const seasons = [
 	'2023',
@@ -452,7 +458,7 @@ export const seasonsData: SeasonsData = {
 		// I need to update the data model to properly handle this, but I put in 0 for all
 		// his stats for now. Luckily, Connor actually was 10th place, so it works out
 		'alex-piering': {
-			place: 10,
+			place: 0,
 			record: {
 				wins: 0,
 				losses: 0,
