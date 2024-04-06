@@ -33,7 +33,7 @@ export function Season({ season }: SeasonProps) {
 					</TableRow>
 				</TableHead>
 				<TableBody>
-					{members.map(({ firstName, id }) => {
+					{members.map(({ id, teamName }) => {
 						const {
 							place,
 							record: { wins, losses, ties },
@@ -41,7 +41,7 @@ export function Season({ season }: SeasonProps) {
 
 						return (
 							<TableRow key={id}>
-								<TableCell>{firstName}</TableCell>
+								<TableCell>{teamName}</TableCell>
 								<TableCell>{place}</TableCell>
 								<TableCell>{`${wins}-${losses}-${ties}`}</TableCell>
 							</TableRow>
