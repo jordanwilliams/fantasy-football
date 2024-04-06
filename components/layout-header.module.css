@@ -1,9 +1,48 @@
 .header {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-2);
 	padding: var(--spacing-5);
 }
 
-.title {
-	font-weight: 700;
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	border: none;
+	border-radius: var(--spacing-1);
+	width: 32px;
+	height: 32px;
+}
+
+.button svg {
+	width: var(--spacing-5);
+	height: var(--spacing-5);
+}
+
+.link {
 	font-stretch: 90%;
+	font-weight: 300;
 	user-select: none;
+	position: relative;
+	animation: magically-appear 1000ms both;
+}
+
+.linkActive::after {
+	content: '';
+	display: block;
+	height: 2px;
+	background: var(--gradient);
+	width: 100%;
+	position: absolute;
+}
+
+@keyframes magically-appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
