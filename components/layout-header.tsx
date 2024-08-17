@@ -9,6 +9,7 @@ import styles from './layout-header.module.css';
 enum Routes {
 	Home = '/',
 	Seasons = '/seasons',
+	Draft = '/draft',
 }
 
 export default function LayoutHeader() {
@@ -53,6 +54,13 @@ export default function LayoutHeader() {
 						className={styles.link}
 					>
 						Seasons
+					</Link>
+					<Link
+						href={Routes.Draft}
+						data-active={pathname === Routes.Draft}
+						className={styles.link}
+					>
+						2024 Draft
 					</Link>
 				</>
 			)}
