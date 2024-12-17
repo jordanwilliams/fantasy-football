@@ -15,6 +15,7 @@ export type WinLossTie = {
 export type SeasonPlace = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 export const seasons = [
+	'2024',
 	'2023',
 	'2022',
 	'2021',
@@ -35,6 +36,88 @@ export type SeasonData = Record<MemberID, SeasonMemberData>;
 export type SeasonsData = Record<Season, SeasonData>;
 
 export const seasonsData: SeasonsData = {
+	'2024': {
+		'aaron-mack': {
+			place: 0,
+			record: {
+				wins: 7,
+				losses: 7,
+				ties: 0,
+			},
+		},
+		'alex-piering': {
+			place: 0,
+			record: {
+				wins: 4,
+				losses: 10,
+				ties: 0,
+			},
+		},
+		'ben-johnson': {
+			place: 0,
+			record: {
+				wins: 3,
+				losses: 11,
+				ties: 0,
+			},
+		},
+		'chase-pritchett': {
+			place: 0,
+			record: {
+				wins: 7,
+				losses: 7,
+				ties: 0,
+			},
+		},
+		'cody-fields': {
+			place: 0,
+			record: {
+				wins: 7,
+				losses: 7,
+				ties: 0,
+			},
+		},
+		'collin-barrett': {
+			place: 0,
+			record: {
+				wins: 8,
+				losses: 6,
+				ties: 0,
+			},
+		},
+		'dan-eckman': {
+			place: 0,
+			record: {
+				wins: 7,
+				losses: 7,
+				ties: 0,
+			},
+		},
+		'jordan-williams': {
+			place: 0,
+			record: {
+				wins: 7,
+				losses: 7,
+				ties: 0,
+			},
+		},
+		'kenny-copsey': {
+			place: 0,
+			record: {
+				wins: 10,
+				losses: 4,
+				ties: 0,
+			},
+		},
+		'max-houston': {
+			place: 0,
+			record: {
+				wins: 10,
+				losses: 4,
+				ties: 0,
+			},
+		},
+	},
 	'2023': {
 		'aaron-mack': {
 			place: 3,
